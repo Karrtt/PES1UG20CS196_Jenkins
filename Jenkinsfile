@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            sh "ma -C main"
+            sh "make -C main"
+            //sh "ma -C main" Intentional error
                 echo 'Build stage completed'
             }
         }
